@@ -1,0 +1,13 @@
+{% extends "miblog/base.html" %}
+{% load static %}
+{% block micontenido %}
+{% for posteos in posteo %}
+<div>
+    <h2>{{posteos.titulo}}</h2>
+    <h5>Creado el: {{posteos.fecha_creacion}}</h5>
+    <p>{{posteos.contenido}}</p>
+</div>
+{% endfor %}
+
+
+{% endblock %}
